@@ -133,12 +133,12 @@ The majority of development for FarmData2 is front-end (i.e. browser-based).  Th
 
 #### FarmOS API ####
 
-The FarmData2 front end exchanges data with the server using the [FarmOS API](https://farmos.org/development/api/). JavaScript code using the [Axios](https://github.com/axios/axios) library requests data from FarmOS (e.g. a list of fields) or sends new data to FarmOS (e.g. a new planting). When data is received from FarmOS, the Vue.js object is updated, which in turn updates what is displayed in the browser. Conversely, when the user enters data in the browser, that data updates the Vue.js object and that information is used to make requests to the server.
+The FarmData2 front end exchanges data with the server using the [farmOS API](https://farmos.org/development/api/). JavaScript code using the [Axios](https://github.com/axios/axios) library requests data from farmOS (e.g. a list of fields) or sends new data to farmOS (e.g. a new planting). When data is received from farmOS, the Vue.js object is updated, which in turn updates what is displayed in the browser. Conversely, when the user enters data in the browser, that data updates the Vue.js object and that information is used to make requests to the server.
 
   - Resources:
     - [What is an API and how does it work?](https://www.youtube.com/watch?v=Yzx7ihtCGBs): A video introduction to APIs with a few examples.This is a good place to start if you are new to APIs.
     - [Using Axios to Consume APIs](https://vuejs.org/v2/cookbook/using-axios-to-consume-apis.html): A short example of a `GET` request using Axios and Vue.js.
-    - [Axios](https://github.com/axios/axios): Full documentation for the axios library. This show how to do both `GET` and `POST` requests.
+    - [Axios](https://github.com/axios/axios): Full documentation for the Axios library. This show how to do both `GET` and `POST` requests.
     - [FarmOS API](https://farmos.org/development/api/): Documentation for the FarmOS API.
     - [Hoppscotch](https://hoppscotch.io/): A tool for experimenting with API calls. This can be useful in figuring out how to request what you want from the FarmData2 API and how its responses are formatted.
 
@@ -155,7 +155,7 @@ The functionality of FarmData2 is tested using the [Cypress framework](https://w
 
 ##### End-to-End Tests #####
 
-The Cypress end-to-end test framework works by controlling the web browser. A test typically consists of a series of steps that are automated by the Cypress tests, called _spec_s. A typical spec consist of the steps:
+The Cypress end-to-end test framework works by controlling the web browser. A test typically consists of a series of steps that are automated by the Cypress tests, called *spec*s. A typical spec consist of the steps:
   1. Setup the test (e.g. login, prime the database)
   1. Visit a specific page
   1. Query the page for an _html element_ of interest (e.g. button, ext field)
@@ -221,4 +221,4 @@ farmOS runs on top of Drupal. From the FarmData2 perspective this is largely tra
 
 #### drush ####
 
-For a few particular tasks related to initializtion and configuration FarmData2 makes use of [drush](https://www.drush.org/latest/) to interact with the Drupal instance on which farmOS is running. As it is discovered that more information is necessary it will be added here.
+For a few particular tasks related to initialization and configuration FarmData2 makes use of [drush](https://www.drush.org/latest/) to interact with the Drupal instance on which farmOS is running. As it is discovered that more information is necessary it will be added here.
